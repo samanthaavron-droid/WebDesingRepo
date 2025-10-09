@@ -1,0 +1,85 @@
+.container {
+  display: flex;
+  width: 100%;
+  background-color: DodgerBlue;
+  mix-blend-mode: screen;
+}
+.background {
+  background-color: dodgerblue;
+  z-index: 1;
+  position: relative;
+}
+#header1 {
+  text-align: center;
+  margin-top: -10px;
+  margin-left: -10px;
+  padding-top: 20px;
+  width: 102%;
+  background: linear-gradient(to bottom, lightcoral, lightgreen, DodgerBlue);
+  text-shadow: white 2px 2px 2px;
+}
+
+#box1 {
+  display: flex;
+  background-color: lightblue;
+  flex-grow: 1;
+}
+#box1 img{
+  display: flex;
+  margin: 0 auto;
+  width: 80%;
+  height: auto;
+}
+#box2 {
+  display: flex;
+  background-color: lightgreen;
+  flex-grow: 2;
+}
+#box2 img{
+  display: flex;
+  margin: 0 auto;
+  width: 80%;
+  height: auto;
+}
+#box3 {
+  display: flex;
+  background-color: lightcoral;
+  flex-grow: 3;
+}
+#box3 img{
+  display: flex;
+  margin: 0 auto;
+  width: 80%;
+  height: auto;
+}
+
+.container > button {
+  margin: 10px;
+  padding: 20px;
+  font-size: 30px;
+  width: 550px;
+  flex-grow: 1;
+  border: none;
+  cursor: pointer;
+}
+
+.container > button:hover {
+  color: #333; 
+  box-shadow: 20px 20px 20px #3333;
+}
+
+#emile {
+  position: fixed;
+  left: 10px;
+  bottom: 0;
+  width: 100%;
+  text-align: left;
+  padding: 10px 0;
+  margin: 0;
+}
+
+@media screen AND (max-width: 600px) {
+  .flex-item{
+    flex-basis: 100%;
+  }
+} 
