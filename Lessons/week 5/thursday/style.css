@@ -5,7 +5,7 @@
   mix-blend-mode: screen;
 }
 .background {
-  background-color: dodgerblue;
+  background: linear-gradient(to bottom, blue, red, green, pink);
   z-index: 1;
   position: relative;
 }
@@ -15,7 +15,10 @@
   margin-left: -10px;
   padding-top: 20px;
   width: 102%;
-  background: linear-gradient(to bottom, lightcoral, lightgreen, DodgerBlue);
+  height: 50vh;
+  background-image: url('https://www.teahub.io/photos/full/217-2178970_cat-ultrawide-wallpaper-cat-wallpaper-21-9.jpg');
+  background-size: cover;
+  background-position: center;
   text-shadow: white 2px 2px 2px;
 }
 
@@ -54,10 +57,10 @@
 }
 
 .container > button {
-  margin: 10px;
-  padding: 20px;
-  font-size: 30px;
-  width: 550px;
+  margin: 1,4vh;
+  padding: 2,9vh;
+  font-size: 4,4ch;
+  width: 800vh;
   flex-grow: 1;
   border: none;
   cursor: pointer;
@@ -68,7 +71,7 @@
   box-shadow: 20px 20px 20px #3333;
 }
 
-#emile {
+#emile a {
   position: fixed;
   left: 10px;
   bottom: 0;
@@ -76,6 +79,7 @@
   text-align: left;
   padding: 10px 0;
   margin: 0;
+  color: white;
 }
 
 @media screen AND (max-width: 600px) {
