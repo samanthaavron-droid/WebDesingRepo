@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Document</title>
+</head>
+<body>
+  <canvas style="border: 1px solid black" id="mycanvas" height ="800" width = "1200">
+</body>
+<script src="turtle.js"></script>
+<script defer>
+  //Get the canvas from the body
+  const canvas = document.getElementById("mycanvas");
+  const p = new Turtle(canvas);
+
+  //place the pen on the canvas. First argument is the x position, second argument is the y position.
+  p.moveto(400, 350);
+  p.penDown = true;
+
+  //This function draws a square. The function isn't called so this code does nothing.
+  //Argument is the size of the square.
+  function Square(size){
+    for(let i = 0; i < 4; i++){
+      p.forward(size);
+      p.right(90);
+    }
+  }
+  function flower(){
+    for (let j = 0; j < 5; j++){
+      for(let i = 0; i < 120; i++){
+        p.forward(2);
+        p.left(1);
+        }
+        p.left(120);
+    }
+    }
+
+  /*
+  for(let i = 0; i < 360; i++){
+    p.forward(1);
+    p.left(1);
+  }
+*/
+    flower();
+  // Square(100);
+</script>
+</html>
