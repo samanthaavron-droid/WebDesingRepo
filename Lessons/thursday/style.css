@@ -3,6 +3,7 @@
   width: 100%;
   background-color: DodgerBlue;
   mix-blend-mode: screen;
+  flex-wrap: wrap;
 }
 .background {
   background: linear-gradient(to bottom, blue, red, green, pink);
@@ -60,8 +61,9 @@
   margin: 1,4vh;
   padding: 2.9vh;
   font-size: 4.4ch;
-  width: 800vh;
-  flex-grow: 1;
+  flex-basis: 33%;
+  flex-grow: 0;
+  flex-shrink: 0;
   border: none;
   cursor: pointer;
 }
@@ -83,7 +85,7 @@
 }
 
 @media screen AND (max-width: 600px) {
-  .container{
+  .container>button {
     flex-basis: 100%;
   }
 } 
