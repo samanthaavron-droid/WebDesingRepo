@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <canvas style="border:1px solid rgb(249, 157, 64)" width="800" height="600" id="canvas">
+        
+    </canvas>
+    <script>
+        const canvas = document.getElementById('canvas');   
+        const g = canvas.getContext('2d');
+
+        function Ball(x, y, radius, color) {
+            g.fillStyle = color;
+            g.beginPath();
+            g.arc(x, y, radius, 0, Math.PI * 2);
+            g.closePath();
+            g.fill();
+            g.stroke();
+            console.log('Ball drawn at', x, y);
+        }
+        
+        function RandomColor(){
+            let hue = Math.random() * 360;
+            let saturation = 100;
+            let light = 50;
+
+            let color = `hsl(${hue}, ${saturation}%, ${light}%)`;
+            return color;
+        }
+
+
+        Ball(100, 100, 50, color);
+    </script>
+</body>
+</html>
