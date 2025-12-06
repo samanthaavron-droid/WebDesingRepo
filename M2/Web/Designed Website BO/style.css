@@ -1,0 +1,110 @@
+.ma-shan-zheng-regular {
+  font-family: "Ma Shan Zheng", cursive;
+  font-weight: 400;
+  font-style: normal;
+}
+
+body {
+    background-image: url(forest.png);
+    background-repeat: no-repeat;
+    background-size: 110%;
+    font-family: "Ma Shan Zheng";
+}
+body.modal-open {
+    height: 100vh;
+    overflow-y: hidden;
+}
+
+ a:link {
+      text-decoration: none;
+}
+
+a:visited {
+      text-decoration: none;
+}
+
+a:hover {
+      text-decoration: none;
+}
+
+a:active {
+      text-decoration: none;
+}
+
+a { color: inherit; } 
+
+.topline {
+    display:flex; 
+    flex-direction: row; 
+    justify-content: center; 
+    align-items: center;
+    color:rgb(30, 255, 0);
+    margin-bottom: 10%;
+}
+
+#butt {
+    flex-grow: 10;
+    display: flex;
+    margin-left: 5%;
+    margin-right: 5%;
+    text-shadow: 5px 5px black;
+    font-size: 50px;
+}
+
+.name {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+#gamename {
+    text-shadow: 5px 5px black;
+    color: red;
+    font-size: 100px;
+    margin: auto;
+}
+
+.side {
+    display: flex;
+    flex-direction: row; 
+    margin-top: -25%;
+}
+
+.left {
+    margin-left: 3%;
+    color: rgb(255, 255, 1);
+    text-shadow: 5px 5px black;
+    text-align: center;
+}
+.right {
+    margin-right: 3%;
+    color: rgb(255, 151, 255);
+    text-shadow: 8px 8px black;
+    text-align: center;
+    margin-left: 52%;   
+}
+
+.what {
+    font-size: 45px;
+    margin-top: 0%;
+    white-space: normal;
+    width: 400px;
+}
+
+.explain {
+    width: 400px;
+    font-size: 30px;
+    margin-top: -6%;
+}
+
+.slogan {
+    font-size: 60px;
+    text-shadow: 5px 5px black;
+    color: red;
+    margin-top: 5%;
+}
+
+.slogLine {
+    margin: 0%;
+}
